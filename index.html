@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/1c54c8d3ee1440608733f6afd6dbc1f4?family=Zin+Display"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Spline+Sans:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+</head>
+<body>
+    <div class="page">
+        <div class="sideBar">
+            <div class="sidebar_content">
+                <div class="upper_sidebar">
+                    <div class="logo">
+                        <img src="assets/Union.svg" alt="logo"/>
+                    </div>
+                    <div class = "profile">
+                        <div class="logo_and_name">
+                            <div class="proileLogo">
+                                <img src="assets/Group 79.svg" alt="profile Logo"/>
+                            </div>
+                            <div class="user_details">
+                                <p class="name">Jessica Thompson</p>
+                                <p class="designation">Primary user</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="assets/Shape.svg" alt="dropdown arrow"/>
+                        </div>
+                    </div>
+                    <div class="home">
+                        <img class="homeimg" src="assets/home 1.svg" alt="home icon"/>
+                        <p class="homePara">Home</p>
+                    </div>
+                    <div class="document">
+                        <img class="homeimg" src="assets/file-text 1.svg" alt="doc icon"/>
+                        <p class="homePara">Documents</p>
+                    </div>
+                    <div class="home">
+                        <img class="homeimg" src="assets/message-circle 1.svg" alt="chat icon"/>
+                        <p class="homePara">Chat with Neptune</p>
+                    </div>
+                    <div class="home">
+                        <img class="homeimg" src="assets/help-circle 1.svg" alt="help icon"/>
+                        <p class="homePara">Help</p>
+                    </div>
+                    <div class="home">
+                        <img class="homeimg" src="assets/settings 1.svg" alt="settings logo"/>
+                        <p class="homePara">Settings</p>
+                    </div>
+                </div>
+                <div class="lower_sidebar">
+                    <img class="call_logo" src="assets/phone 1.svg" alt="call logo"/>
+                    <div class="trouble">
+                        <p style="font-size: 22px; font-weight: 500; line-height: 28.8px;">Having Trouble?</p>
+                        <p style="font-size: 14px;">Feel free to contact us and we will always help you through the process.</p>
+                    </div>
+                    <button class="contact_us">Contact Us</button>
+                </div>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="nav_link">
+                <p style="font-size: 16px; line-height: 22.4px; font-weight: 400;">Home</p>
+                <img style="width: 20px; height: 20px;" src="assets/chevron-right.svg" alt="right arrow"/>
+                <p style="font-size: 16px; line-height: 22.4px; font-weight: 400; color: #B5BDCD;">Documents</p>
+            </div>
+            <div class="title_and_search">
+                
+                <div class="add_document">
+                    <p class="zin_display" style="font-size: 33px; font-weight: 600; line-height: 39.27px; ">My Documents</p>
+                    <button class="add_doc_button">Add Document</button>
+                </div>
+                <div class="searchBar">
+                    <input id ="searchDocs" type="text" placeholder="Search Documents">                    
+                    <img style="width: 16.64px; height: 16.64px;" src="assets/Layer_1.svg" alt="search logo"/>
+                </div>
+            </div>
+            <table border="1" style="border: 0.5px; border-color: #B5BDCD; ">
+                <thead>
+                    <th>
+                        <input class="selectAll" type="checkbox"/>
+                    </th>
+                    <th>Document name</th>
+                    <th>Status</th>
+                    <th>Last Modified</th>
+                </thead>
+                <tbody id="documents_container">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
