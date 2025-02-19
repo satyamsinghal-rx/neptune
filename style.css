@@ -427,6 +427,6 @@ a{
 }
 .downArrow{
     width: 25px;
-    bottom: 675px;
-    left: 10px;
+    padding-top: 30px;
+    padding-left: 10px;
 }

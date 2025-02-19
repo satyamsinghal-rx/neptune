@@ -50,7 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
      const downArrow = document.createElement('img');
      downArrow.src = 'assets/arrow-next-svgrepo-com.svg';
      downArrow.classList.add('downArrow');
-     document.body.appendChild(downArrow);
+
+     const sideBar = document.querySelector('.sideBar');
+     sideBar.appendChild(downArrow);
 
 
     function displayDocuments(searchQuery = ''){
@@ -335,7 +337,6 @@ document.addEventListener("DOMContentLoaded", () => {
     downArrow.addEventListener('click', () => {
         document.querySelector('.sideBar').classList.toggle('collapsed');
         downArrow.style.display = 'none';
-        side
     })
 
 
