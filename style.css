@@ -22,6 +22,22 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: width 0.3s ease-in-out;
+}
+.sideBar.collapsed{
+    width: 50px;
+}
+.sideBar.collapsed .sidebar_content{
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+}
+.sideBar .sidebar_content {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out 0.2s;
+}
+.sideBar.collapsed .logo{
+    width: 40px;
 }
 .sidebar_content{
     height: 100vh;
@@ -33,7 +49,15 @@ body{
 .logo{
     height: 31.87px;
     width: 168px;
+    display: flex;
+    gap: 70px;
 }
+#arrowLogo{
+    width: 25px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
 .proileLogo{
     width: 41px;
     height: 41px;
@@ -76,6 +100,16 @@ body{
     padding: 1px;
     height: 30px;
     font-size: 6px;
+}
+.home:hover{
+    padding-top: 7px; 
+    padding-bottom: 7px; 
+    background-color: #E8ECF1; 
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
 }
 .document{
     padding-top: 10px; 
@@ -242,6 +276,9 @@ p{
     padding: 10px 20px;
     font-size: 16px;
 }
+.add_doc_button:hover{
+    background-color: #2a505e;
+}
 .pop_up_form{
     display: none;
     position: fixed;
@@ -383,4 +420,13 @@ p{
 }
 .deleteDocButton:hover{
     background-color:#ca2d2d;
+}
+a{
+    text-decoration: none;
+    color: #626D82;
+}
+.downArrow{
+    width: 25px;
+    bottom: 675px;
+    left: 10px;
 }

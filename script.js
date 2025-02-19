@@ -47,6 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
      deleteDocButton.textContent = 'Delete Doc'
      document.body.appendChild(deleteDocButton);
 
+     const downArrow = document.createElement('img');
+     downArrow.src = 'assets/arrow-next-svgrepo-com.svg';
+     downArrow.classList.add('downArrow');
+     document.body.appendChild(downArrow);
+
 
     function displayDocuments(searchQuery = ''){
         const documentContainer = document.querySelector('#documents_container');
@@ -318,6 +323,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
             
     });
+
+    document.querySelector('#arrowLogo').addEventListener('click', () => {
+        document.querySelector('.sideBar').classList.toggle('collapsed');        
+        downArrow.style.display = 'block';
+        downArrow.style.position = 'absolute';
+        downArrow.style.cursor = 'pointer';
+            
+    });
+
+    downArrow.addEventListener('click', () => {
+        document.querySelector('.sideBar').classList.toggle('collapsed');
+        downArrow.style.display = 'none';
+        side
+    })
 
 
     addButton.addEventListener('click', () => {
