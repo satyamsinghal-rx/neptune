@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
      const downArrow = document.createElement('img');
      downArrow.src = 'assets/arrow-next-svgrepo-com.svg';
      downArrow.classList.add('downArrow');
+     downArrow.style.display = 'none';
 
      const sideBar = document.querySelector('.sideBar');
      sideBar.appendChild(downArrow);
